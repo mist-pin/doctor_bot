@@ -4,15 +4,11 @@ an api based ai powered web_page that uses llm to provide answers on questioning
 
 # how to run:
 
-> install ollama
->> pull llma2 model
->> start the ai server
+- Install Ollama  
+  - Pull LLaMA 2 model  
+  - Start the AI server  
 
-> goto doctorshit/backend folder and execute this:
->> pip install flask flask-sqlalchemy flask-cors requests
->> python backend.py
-
-> goto doctorshit/frontend folder and execute this:
->> npm init -y
->> npm i express cors node-fetch path
->> node app.js
+- Go to `doctorshit/backend` folder and execute:  
+  ```bash
+  pip install flask flask-sqlalchemy flask-cors requests
+  python backend.py
