@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor AI Chat</title>
+    <script src="http://localhost:3000/js/funcsssss.js"></script>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const question = urlParams.get('question');
+            if (question) {
+                document.getElementById('question').value = question;
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Doctor AI Chat</h1>
+    <div id="chatWindow">
+        <!-- Chat messages will be added here dynamically -->
+    </div>
+    <input type="text" id="question" placeholder="Ask AI">
+    <button onclick="askAI()">Ask</button>
+</body>
+</html>
